@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://kit.fontawesome.com/2bfcb6bd35.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="utf-8">
+        <title>Medicinae</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="shortcut icon" type="image/x-icon" href="img/faviconn.ico">
+    </head>
+
+    <body>
+      <header class="container-fluid header">
+        <div class="row">
+            <div class="col-12 banner">
+                <img src="img/banner1.png" width="100%" height="80%">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-xl-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class=class="col-5 logo">
+                            <nav class="navbar">
+                                <a class="navbar-brand" href="index.html">
+                                    <a class="nav-link active" href="index.html"><img src="img/Logo.png" width="80%" height="80%" class="d-inline-block align-top" alt=""></a>
+                                </a>
+                            </nav>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav col-12 menu">
+                            <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="historico.html">Histórico</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="fichamedica.html">Ficha médica</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="faleconosco.html">Contato</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </nav>
+                </div>
+        </div>
+      </header>
+
+      <form class="form-horizontal">
+          <fieldset>
+
+          <!-- Form Name -->
+          <legend>Ficha médica:</legend>
+
+          <!-- Text input-->
+          <div class="form-group">
+              <label class="col-md-4 control-label" for="contactoEmergencia">Nome Completo</label>  
+              <div class="col-md-5">
+                  <input id="contactoEmergencia" name="contactoEmergencia" placeholder="" class="form-control input-md" required="" type="text">
+              </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+              <label class="col-md-4 control-label" for="telefonosContacto">Telefone para contato</label>  
+              <div class="col-md-5">
+                  <input id="telefonosContacto" name="telefonosContacto" placeholder="" class="form-control input-md" required="" type="text">
+              </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+              <label class="col-md-4 control-label" for="medicoParticular">Contato de Emergência</label>  
+              <div class="col-md-5">
+                  <input id="medicoParticular" name="medicoParticular" placeholder="" class="form-control input-md" type="text">
+              </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+              <label class="col-md-4 control-label" for="telefonosMedico">Telefone de Emergência</label>  
+              <div class="col-md-5">
+                  <input id="telefonosMedico" name="telefonosMedico" placeholder="" class="form-control input-md" type="text">
+              </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+              <label class="col-md-4 control-label" for="clinica">Convênio</label>  
+              <div class="col-md-5">
+                  <input id="clinica" name="clinica" placeholder="" class="form-control input-md" type="text">
+              </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+              <label class="col-md-4 control-label" for="fechaChequeo">Última Consulta</label>  
+              <div class="col-md-4">
+                  <input id="fechaChequeo" name="fechaChequeo" placeholder="" class="form-control input-md" type="text">
+                  <span class="help-block">(dd-mm-aaaa)</span>  
+              </div>
+          </div>
+
+          <!-- Select Basic -->
+          <div class="form-group">
+              <label class="col-md-4 control-label" for="tipoSangre">Tipo sanguíneo</label>
+              <div class="col-md-2">
+                  <select id="tipoSangre" name="tipoSangre" class="form-control">
+                      <option value="-">(!)</option>
+                      <option value="A+">A+</option>
+                      <option value="A-">A-</option>
+                      <option value="B+">B+</option>
+                      <option value="B-">B-</option>
+                      <option value="AB+">AB+</option>
+                      <option value="AB-">AB-</option>
+                      <option value="O+">O+</option>
+                      <option value="O-">O-</option>
+                  </select>
+              </div>
+          </div>
+
+          <!-- Textarea -->
+          <div class="form-group">
+              <label class="col-md-4 control-label" for="medicamentos">Medicamentos com/sem receita</label>
+              <div class="col-md-4">                     
+                  <textarea class="form-control" id="medicamentos" name="medicamentos"></textarea>
+              </div>
+          </div>
+
+          <!-- Multiple Checkboxes (inline) -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="vacunas">Vacinas</label>
+            <div class="col-md-4">
+              <label class="checkbox-inline" for="vacunas-0">
+                <input name="vacunas" id="vacunas-0" value="1" type="checkbox">
+                BGC
+              </label>
+              <label class="checkbox-inline" for="vacunas-1">
+                <input name="vacunas" id="vacunas-1" value="1" type="checkbox">
+                HB
+              </label>
+              <label class="checkbox-inline" for="vacunas-2">
+                <input name="vacunas" id="vacunas-2" value="1" type="checkbox">
+                Polio
+              </label>
+              <label class="checkbox-inline" for="vacunas-3">
+                <input name="vacunas" id="vacunas-3" value="1" type="checkbox">
+                Penta
+              </label>
+              <label class="checkbox-inline" for="vacunas-4">
+                <input name="vacunas" id="vacunas-4" value="1" type="checkbox">
+                SRP
+              </label>
+              <label class="checkbox-inline" for="vacunas-5">
+                <input name="vacunas" id="vacunas-5" value="1" type="checkbox">
+                DPT
+              </label>
+              <label class="checkbox-inline" for="vacunas-6">
+                <input name="vacunas" id="vacunas-6" value="1" type="checkbox">
+                Flu
+              </label>
+            </div>
+          </div>
+
+          <!-- Multiple Checkboxes -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="condiciones">Marque caso se aplique. Por favor, explique em comentários, abaixo:</label>
+            <div class="col-md-4">
+            <div class="checkbox">
+              <label for="condiciones-0">
+                <input name="condiciones" id="condiciones-0" value="1" type="checkbox">
+                Está em dia com os cuidados médicos
+              </label>
+                  </div>
+            <div class="checkbox">
+              <label for="condiciones-1">
+                <input name="condiciones" id="condiciones-1" value="1" type="checkbox">
+                Sofre alguma enfermidade crônica
+              </label>
+                  </div>
+            <div class="checkbox">
+              <label for="condiciones-2">
+                <input name="condiciones" id="condiciones-2" value="1" type="checkbox">
+                Sofre resfriados frequentemente
+              </label>
+                  </div>
+            <div class="checkbox">
+              <label for="condiciones-3">
+                <input name="condiciones" id="condiciones-3" value="1" type="checkbox">
+                Frequentemente tem dores de cabeça, costas, pernas, etc.
+              </label>
+                  </div>
+            <div class="checkbox">
+              <label for="condiciones-4">
+                <input name="condiciones" id="condiciones-4" value="1" type="checkbox">
+                Histórico familiar de doenças
+              </label>
+                  </div>
+            <div class="checkbox">
+              <label for="condiciones-5">
+                <input name="condiciones" id="condiciones-5" value="1" type="checkbox">
+                Atividade física limitada
+              </label>
+                  </div>
+            <div class="checkbox">
+              <label for="condiciones-6">
+                <input name="condiciones" id="condiciones-6" value="1" type="checkbox">
+                Você saiu da escola/trabalho devido a doença ou acidente
+              </label>
+                  </div>
+            <div class="checkbox">
+              <label for="condiciones-7">
+                <input name="condiciones" id="condiciones-7" value="1" type="checkbox">
+                Alérgico a algum medicamento, comida ou outros
+              </label>
+                  </div>
+            <div class="checkbox">
+              <label for="condiciones-8">
+                <input name="condiciones" id="condiciones-8" value="1" type="checkbox">
+                Usa óculos ou lentes
+              </label>
+                  </div>
+            </div>
+          </div>
+
+          <!-- Textarea -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="comentario_medico">Comentários:</label>
+            <div class="col-md-4">                     
+              <textarea class="form-control" id="comentario_medico" name="comentario_medico"></textarea>
+            </div>
+          </div>
+
+          <!-- Button (Double) -->
+          <div class="form-group">
+              <label class="col-md-4 control-label" for="btnGuardar"></label>
+              <div class="col-md-8">
+                  <button id="btnCancelar" name="btnCancelar" class="btn btn-outline-warning">Cancelar</button>
+                  <button id="btnGuardar" name="btnGuardar" class="btn btn-primary">Salvar</button>
+              
+            </div>
+          </div>
+
+          </fieldset>
+      </form>
+
+
+      <footer class="container-fluid footer">
+        <div class="row">
+
+            <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+                <p>Copyright 2021 - Trabalho Interdisciplinar de Aplicações Web - <b>MEDICINAE</b></p>
+            </div>
+
+            <div class=" imagem">
+                <a class="nav-link active" href="index.html"><img src="img/logo.png" class="imagem"></a>
+            </div>
+
+        </div>
+      </footer>
+
+
+        <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    </body>
+</html>

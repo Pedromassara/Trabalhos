@@ -1,0 +1,109 @@
+.header{
+    background-color:white;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.banner img {
+    display: fixed;
+}
+
+.logo {
+    padding-top: 0px;
+    max-width: 100%;
+    size:fixed;
+}
+.logo nav a{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: darksalmon;
+    font-size: 35px;
+    text-align: left;
+    margin-top: -100px;
+    margin-bottom: 50px;
+}
+header {
+    width: 100%;
+    padding-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: initial;
+}
+@media screen and (min-width: 1024px){.menu{padding-left: 90px;}}
+.menu ul li a{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.7em;
+    color: darksalmon;
+    padding: 20px;
+}
+
+.form-horizontal {
+    padding-top: 20px;
+    padding-left: 100px;
+}
+
+.footer {
+    margin-top: 10px;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    align-items: center;
+}
+.footer p {
+    padding-top: 25px;
+    padding-left: 20px;
+    text-align:center;
+}
+
+.footer img {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+}
+
+.main {
+    padding: 0px;
+    background-color:#E06F11;
+    margin: 0px;
+}
+legend{
+    font-size: 2em;
+    color:#E06F11;
+}
+
+.form-horizontal {
+    font-size: 1.4em;
+}
+
+.coluna {
+    background-color:#E06F11;
+    padding: 0;
+    padding-bottom: 20px !important;
+}
+.coluna h1{
+    padding-top: 10%;
+    text-align: center !important;
+    color: white;
+    font-size: 3.5em;
+}
+.coluna p{
+    text-align: center;
+    color: white;
+    margin-left: 20%;
+    font-size: 1.8em;
+}.coluna i{
+    color: white;
+    margin-left: 75%;
+    margin-top: 3%;
+    font-size: 2em;
+}
+.coluna1 img{
+    background-color:#E06F11;
+    margin: 0%;
+    padding: 0%;
+}
+@media screen and (max-width:1024px){.coluna1 img{display: none;}}
+@media screen and (max-width: 770px)and (min-width:832px){.form-horizontal .control-label {text-align: left;}}
